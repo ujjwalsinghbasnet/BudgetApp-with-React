@@ -1,0 +1,114 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+.App {
+  max-width: 80vw;
+  max-height: 100vh;
+  margin-left: 10vw;
+}
+.add__btn{
+  cursor: pointer;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  padding: 0 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 5vh;
+}
+
+.app__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.app__left{
+  flex: 0.9;
+  position: relative;
+}
+.modal{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 100%;
+  border-radius: 30px;
+  top: 0;
+  left: -1%;
+  background-color: rgba(238, 234, 234, 0.938);
+  z-index: 2;
+  padding: 15px;
+}
+.modal h2{
+  text-align: center;
+}
+.modal form{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.modal .input{
+  margin-top:20px;
+  margin-bottom: 20px
+}
+.app__right__card{
+  height: 69vh;
+  padding: 0px;
+}
+.graph__heading{
+  text-align: center;
+}
+.totalBudget{
+  position: relative;
+  background-color:rgba(90, 221, 118, 0.938) !important;
+}
+.totalExpense{
+  background-color:rgba(22, 190, 182, 0.938) !important;
+}
+.totalRemaining{
+  background-color:rgba(236, 81, 127, 0.938) !important;
+}
+.edit_form{
+  display: none;
+}
+.editBtn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.editBtn img{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.btn{
+  display: grid;
+  place-items: center;
+}
+.btn img{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.buttons{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+.buttons .edit{
+  margin-right: 10px;
+}
+canvas {
+  height: 25vh;
+}
